@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kafy - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prompt">$</span> kafy
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">~/home</a></li>
+                <li><a href="#about" class="nav-link">~/about</a></li>
+                <li><a href="#projects" class="nav-link">~/projects</a></li>
+                <li><a href="#contact" class="nav-link">~/contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="close"></span>
+                    <span class="minimize"></span>
+                    <span class="maximize"></span>
+                </div>
+                <div class="terminal-title">Terminal — kafy@portfolio</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-content">
+                    <div class="intro-text">
+                        <h1 class="ios-text" data-text="Halo, Saya Kafy">Halo, Saya Kafy</h1>
+                        <p class="subtitle typing-container">
+                            <span class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </p>
+                    </div>
+                    
+                    <div class="terminal-output">
+                        <div class="command-line">
+                            <span class="prompt">kafy@portfolio ~ %</span>
+                            <span class="command" id="typed-command"></span>
+                            <span class="terminal-cursor">█</span>
+                        </div>
+                        <div class="output" id="terminal-output"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>scroll down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="terminal-prompt">$</span> cat about.txt</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="code-window">
+                        <pre class="code-content">
+<span class="comment">// About Me</span>
+<span class="keyword">const</span> <span class="variable">kafy</span> = {
+    <span class="property">role</span>: <span class="string">"Cyber Security Researcher & AI Engineer"</span>,
+    <span class="property">location</span>: <span class="string">"Indonesia"</span>,
+    <span class="property">passion</span>: [
+        <span class="string">"Breaking & Securing Systems"</span>,
+        <span class="string">"Building AI Solutions"</span>,
+        <span class="string">"Creating Beautiful Interfaces"</span>
+    ],
+    <span class="property">current_focus</span>: <span class="string">"AI-Powered Security Tools"</span>
+};
+                        </pre>
+                    </div>
+                    
+                    <p class="about-description">
+                        Seorang tech enthusiast yang lagi belajar dan berkembang di bidang cyber security dan artificial intelligence.  
+                        Saya percaya kombinasi keamanan siber dan AI bakal jadi bagian penting dari masa depan teknologi.  
+                        Masih dalam perjalanan belajar, saya selalu tertantang buat eksplor hal baru dan nyoba memecahkan masalah kompleks.
+
+                    </p>
+                </div>
+                
+                <div class="skills-container">
+                    <h3><span class="terminal-prompt">$</span> ls skills/</h3>
+                    
+                    <div class="skill-category">
+                        <h4>🔐 Security</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">CTF Player</span>
+                            <span class="skill-tag">Vulnerability Research</span>
+                            <span class="skill-tag">Security Auditing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>🛠️ DevOps</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kali Linux</span>
+                            <span class="skill-tag">BlackArch Linux</span>
+                            <span class="skill-tag">Arch Linux</span>
+                            <span class="skill-tag">Ubuntu</span>
+                            <span class="skill-tag">Debiand</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>🤖 AI Engineering</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>💻 Development</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP <strong class="learn">(Learning)</strong></span>
+                            <span class="skill-tag">Vue.js <strong class="learn">(Learning)</strong></span>
+                            <span class="skill-tag">React <strong class="learn">(Learning)</strong></span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>🗄️ Database</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MariaDB</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>🎨 Design</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="terminal-prompt">$</span> ls projects/</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon">📁</div>
+                        <h3>WormGPT</h3>
+                    </div>
+                    <p class="project-description">
+                        WormGPT CLI for interacting with LLMs via OpenRouter API with multi-language support and customizable model selection. 
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">Ai</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/00x0kafyy/worm-ai" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/00x0kafyy/worm-ai" class="project-link"><i class="fas fa-external-link-alt"></i> Fork</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon">📁</div>
+                        <h3>CTF Writeups Collection</h3>
+                    </div>
+                    <p class="project-description">
+                        Soon.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Binary Exploitation</span>
+                        <span class="tech-tag">Web</span>
+                        <span class="tech-tag">Crypto</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon">📁</div>
+                        <h3>RCE Scanner</h3>
+                    </div>
+                    <p class="project-description">
+                        Scanner Remote Code Execution yang rentan di web berbasis PHP seperti Laravel, ThinkPHP, FCKeditor, dll. Dibuat dengan Python, cocok untuk pentest & bug bounty. 
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Exploitation</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CyberSecurity</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/00x0kafyy/rce-scanner" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/00x0kafyy/rce-scanner" class="project-link"><i class="fas fa-external-link-alt"></i> Fork</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon">📁</div>
+                        <h3>OJS Scanner</h3>
+                    </div>
+                    <p class="project-description">
+                        File Upload Path Scanner in Open Journal System.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Exploitation</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CyberSecurity</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/00x0kafyy/OJS-Scanner" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/00x0kafyy/OJS-Scanner" class="project-link"><i class="fas fa-external-link-alt"></i> Fork</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon">📁</div>
+                        <h3>CTF Source Code.</h3>
+                    </div>
+                    <p class="project-description">
+                        CTF || Source code websites.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue</span>
+                        <span class="tech-tag">Exploit</span>
+                        <span class="tech-tag">CaptureTheFlag</span>
+                        <span class="tech-tag">Web</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/00x0kafyy/ctf" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/00x0kafyy/ctf" class="project-link"><i class="fas fa-external-link-alt"></i> Fork</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="folder-icon">📁</div>
+                        <h3>Security Automation Tools</h3>
+                    </div>
+                    <p class="project-description">
+                        Soon.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Go</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="terminal-prompt">$</span> ./contact.sh</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-terminal">
+                    <pre class="contact-code">
+<span class="comment">#!/bin/bash</span>
+<span class="comment"># Contact Information</span>
+
+<span class="keyword">echo</span> <span class="string">"Initializing contact protocols..."</span>
+<span class="keyword">echo</span> <span class="string">"========================================="</span>
+
+<span class="variable">EMAIL</span>=<span class="string">"bangdani359@gmail.com"</span>
+<span class="variable">GITHUB</span>=<span class="string">"github.com/00x0kafyy"</span>
+<span class="variable">TELEGRAM</span>=<span class="string">"t.me/gibranrakamulyadi"</span>
+
+<span class="keyword">echo</span> <span class="string">"Ready to connect!"</span>
+<span class="keyword">echo</span> <span class="string">"Feel free to reach out for collaborations,"</span>
+<span class="keyword">echo</span> <span class="string">"security consultations, or just to say hi!"</span>
+                    </pre>
+                </div>
+                
+                <div class="contact-links">
+                    <a href="mailto:bangdani359@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/00x0kafyy" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://t.me/gibranrakamulyadi" target="_blank" class="contact-link">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://instagram.com" class="contact-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 kafy. Built with <span class="heart">❤️</span> and lots of <span class="coffee">☕</span></p>
+            <p class="footer-command"><span class="terminal-prompt">$</span> exit</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
